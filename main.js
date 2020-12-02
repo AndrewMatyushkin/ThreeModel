@@ -46,6 +46,7 @@ function init() {
 function animate() {
   renderer.render(scene,camera);
   requestAnimationFrame(animate);
+  model.rotation.z += 0.005;
   light.position.set( 
     camera.position.x + 10,
     camera.position.y + 10,
